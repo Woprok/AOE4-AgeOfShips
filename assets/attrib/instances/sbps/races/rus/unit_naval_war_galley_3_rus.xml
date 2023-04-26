@@ -5,6 +5,7 @@
 				<group name="race_data" List.ItemID="-1160966322" List.ParentItemID="-1160966322">
 					<group name="info">
 						<file name="icon_name" value="races\common\units\war_galley" overrideParent="True" />
+						<locstring name="screen_name" value="11233412" overrideParent="True" />
 						<bool name="is_unique_to_race" value="True" overrideParent="True" />
 					</group>
 				</group>
@@ -13,7 +14,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-719102111" List.ParentItemID="-719102111">
 			<list name="unit_list">
 				<group name="loadout_data" List.ItemID="-2076261556" List.ParentItemID="-2076261556">
-					<instance_reference name="type" value="ebps\races\rus\units\unit_naval_war_galley_3_rus" overrideParent="True" />
+					<instance_reference name="type" value="ebps\races\rus\units\unit_naval_war_galley_3_rus" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 				</group>
 			</list>
 		</template_reference>

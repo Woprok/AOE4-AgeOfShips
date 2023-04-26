@@ -1,5 +1,5 @@
 
-AGS_DOCKHOUSE_POPULATION = 5
+AGS_DOCKHOUSE_POPULATION = 10
 AGS_DOCKHOUSE_MODULE = "AGS_DockHouse"
 
 function AGS_DockHouse_UpdateModuleSettings()	
@@ -21,7 +21,7 @@ function AGS_DockHouse_GameOver()
 	Rule_RemoveGlobalEvent(AGS_DockHouse_OnEntityKilled)
 end
 
-function AGS_DockHouse_OnConstructionComplete()
+function AGS_DockHouse_OnConstructionComplete(context)
 	if context == nil or context.player == nil or context.entity == nil then 
 		return
 	end	
@@ -37,12 +37,11 @@ function AGS_DockHouse_OnConstructionComplete()
 	end
 	
 	if AGS_IsDock(new_context.entity_id) then
-		AGS_Print("AGS_DockHouse_OnConstructionComplete")
 		AGS_DockHouse_AddMinPopulation(new_context.player, AGS_DOCKHOUSE_POPULATION)
 	end
 end
 
-function AGS_DockHouse_OnEntityKilled()
+function AGS_DockHouse_OnEntityKilled(context)
 	if context == nil or context.victim == nil or context.victimOwner == nil then 
 		return
 	end	
@@ -50,15 +49,19 @@ function AGS_DockHouse_OnEntityKilled()
 		player = Core_GetPlayersTableEntry(context.victimOwner),
 		entity_id = context.victim,
 		entity_uwid = Entity_GetID(context.victim),
+		is_finished = Entity_GetBuildingProgress(context.victim) >= 1.0,
 		--entity_position = Entity_GetPosition(context.victim),
 	}	
 	-- Eliminated players are not interesting for any conditions.
 	if new_context.player == nil or new_context.player.isEliminated then
 		return
+	end	
+	-- Exclude incomplete building.
+	if not new_context.is_finished then
+		return
 	end
-	
+		
 	if AGS_IsDock(new_context.entity_id) then
-		AGS_Print("AGS_DockHouse_OnEntityKilled")
 		AGS_DockHouse_RemoveMinPopulation(new_context.player, AGS_DOCKHOUSE_POPULATION)
 	end
 end

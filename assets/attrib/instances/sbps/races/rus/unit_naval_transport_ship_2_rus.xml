@@ -4,6 +4,8 @@
 			<list name="race_list">
 				<group name="race_data" List.ItemID="915517570" List.ParentItemID="915517570">
 					<group name="info">
+						<locstring name="help_text" value="11178254" overrideParent="True" />
+						<locstring name="screen_name" value="11178255" overrideParent="True" />
 						<bool name="is_unique_to_race" value="True" overrideParent="True" />
 					</group>
 				</group>
@@ -12,7 +14,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="256786182" List.ParentItemID="256786182">
 			<list name="unit_list">
 				<group name="loadout_data" List.ItemID="759487890" List.ParentItemID="759487890">
-					<instance_reference name="type" value="ebps\races\rus\units\unit_naval_transport_ship_2_rus" overrideParent="True" />
+					<instance_reference name="type" value="ebps\races\rus\units\unit_naval_transport_ship_2_rus" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 				</group>
 			</list>
 		</template_reference>

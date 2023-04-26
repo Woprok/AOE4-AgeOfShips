@@ -3,7 +3,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-435523900" List.ParentItemID="-435523900">
 			<list name="unit_list">
 				<group name="loadout_data" List.ItemID="1298958278" List.ParentItemID="1298958278">
-					<instance_reference name="type" value="ebps\races\malian\units\unit_naval_scout_2_mal" overrideParent="True" />
+					<instance_reference name="type" value="ebps\races\malian\units\unit_naval_scout_2_mal" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 				</group>
 			</list>
 		</template_reference>

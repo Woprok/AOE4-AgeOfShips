@@ -83,7 +83,7 @@
 			<list name="unit_list">
 				<group name="loadout_data" List.ItemID="1577409106">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\ottoman\units\unit_naval_galleass_4_ott" />
+					<instance_reference name="type" value="ebps\races\ottoman\units\unit_naval_galleass_4_ott" mod="754eeb87b7624e0a8a9a710767df6171" />
 					<list name="unit_attachments">
 					</list>
 					<bool name="is_default_unit" value="True" />

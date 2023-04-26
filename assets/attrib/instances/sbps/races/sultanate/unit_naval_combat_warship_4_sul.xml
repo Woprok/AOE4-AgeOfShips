@@ -1,9 +1,18 @@
 <instance version="4" description="" template="sbps">
 	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-1379545065" List.ParentItemID="-1379545065">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-1353024381" List.ParentItemID="-1353024381">
+					<group name="info">
+						<locstring name="screen_name" value="11203548" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-621024406" List.ParentItemID="-621024406">
 			<list name="unit_list">
 				<group name="loadout_data" List.ItemID="753488983" List.ParentItemID="753488983">
-					<instance_reference name="type" value="ebps\races\sultanate\units\unit_naval_combat_warship_4_sul" overrideParent="True" />
+					<instance_reference name="type" value="ebps\races\sultanate\units\unit_naval_combat_warship_4_sul" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 				</group>
 			</list>
 		</template_reference>

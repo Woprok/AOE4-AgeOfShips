@@ -47,7 +47,7 @@
 			<list name="spawn_items" overrideParent="True">
 				<group name="spawn_item" comment="fireship" List.ItemID="-754789290">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="" overrideParent="True" />
+					<instance_reference name="squad" value="sbps\races\abbasid\unit_naval_fireship_3_abb" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="2" overrideParent="True" />
@@ -75,7 +75,7 @@
 				</group>
 				<group name="spawn_item" comment="fishing boat" List.ItemID="-315884857">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="" overrideParent="True" />
+					<instance_reference name="squad" value="sbps\races\abbasid\unit_naval_fishing_boat_2_abb" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" overrideParent="True" />
@@ -103,7 +103,7 @@
 				</group>
 				<group name="spawn_item" comment="transport ship" List.ItemID="1711608994">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="" overrideParent="True" />
+					<instance_reference name="squad" value="sbps\races\abbasid\unit_naval_transport_ship_2_abb" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" overrideParent="True" />
@@ -131,7 +131,7 @@
 				</group>
 				<group name="spawn_item" comment="baghlah" List.ItemID="-1463640414">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="" overrideParent="True" />
+					<instance_reference name="squad" value="sbps\races\abbasid\unit_naval_combat_ship_2_abb" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" overrideParent="True" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="2" overrideParent="True" />
@@ -159,7 +159,7 @@
 				</group>
 				<group name="spawn_item" comment="warship&#xD;&#xA;" List.ItemID="1375865329">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="" overrideParent="True" />
+					<instance_reference name="squad" value="sbps\races\abbasid\unit_naval_combat_warship_4_abb" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="3" overrideParent="True" />
@@ -187,7 +187,7 @@
 				</group>
 				<group name="spawn_item" comment="trade ship" List.ItemID="1417174955">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="" overrideParent="True" />
+					<instance_reference name="squad" value="sbps\races\abbasid\unit_naval_trade_ship_3_abb" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" overrideParent="True" />
@@ -215,7 +215,7 @@
 				</group>
 				<group name="spawn_item" comment="dhow" List.ItemID="1602460200">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="" overrideParent="True" />
+					<instance_reference name="squad" value="sbps\races\abbasid\unit_naval_dhow_2_abb" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="2" overrideParent="True" />

@@ -9,9 +9,11 @@
 					<d2p1:Key>AssetExplorerGeneric</d2p1:Key>
 					<d2p1:Value>
 						<d2p1:string>assets\attrib\instances</d2p1:string>
-						<d2p1:string>assets\locdb</d2p1:string>
+						<d2p1:string>assets\locdb\Age of Ships.locdb</d2p1:string>
 						<d2p1:string>assets\scar\winconditions</d2p1:string>
+						<d2p1:string>assets\scar\ags_dock_house.scar</d2p1:string>
 						<d2p1:string>assets\scar\ags_special_population_ui.scar</d2p1:string>
+						<d2p1:string>assets\mod.png</d2p1:string>
 					</d2p1:Value>
 				</d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 			</d3p1:ExpandedPaths>
@@ -25,10 +27,10 @@
 	<RecentFiles>
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
 			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\locdb\Age of Ships.locdb</d3p1:string>
-			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\scar\ags_temporary.scar</d3p1:string>
-			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\scar\ags_dock_house.scar</d3p1:string>
-			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\scar\ags_special_population_ui.scar</d3p1:string>
 			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\mod.png</d3p1:string>
+			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\scar\ags_dock_house.scar</d3p1:string>
+			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\scar\ags_temporary.scar</d3p1:string>
+			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\scar\ags_special_population_ui.scar</d3p1:string>
 			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\attrib\Age of Ships.xml</d3p1:string>
 			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\scar\winconditions\Age of Ships.rdo</d3p1:string>
 			<d3p1:string>E:\Mods\Age of Empires IV\Age of Ships\assets\scar\winconditions\Age of Ships.scar</d3p1:string>

@@ -83,7 +83,7 @@
 			<list name="unit_list">
 				<group name="loadout_data" List.ItemID="1862695721">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\core\units\unit_naval_fishing_boat_2" />
+					<instance_reference name="type" value="ebps\races\core\units\unit_naval_fishing_boat_2" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 					<list name="unit_attachments">
 					</list>
 					<bool name="is_default_unit" value="True" />

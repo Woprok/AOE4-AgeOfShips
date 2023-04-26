@@ -15,7 +15,7 @@ AGS_SPECIALPOPULATION_UI_CONTEXT = {
 		is_ui_visible = true,
 		ship_icon = "pack://application:,,,/WPFGUI;component/icons/races/common/units/general_ship.png",
 		info = {
-			used_margin = "-10,0,0,310",
+			used_margin = "-10,0,0,164",
 			current = 0,
 			max = 0,
 		},
@@ -109,7 +109,7 @@ function AGS_SpecialPopulationUI_Update()
 		AGS_SPECIALPOPULATION_UI_CONTEXT.data_context ~= nil and 
 		AGS_SPECIALPOPULATION_UI_CONTEXT.is_ui_created then 
 		
-		AGS_SpecialPopulationUI_MarginError()
+		--AGS_SpecialPopulationUI_MarginError()
 		local cur = math.floor(Player_GetCurrentPopulation(AGS_GS_LOCAL_PLAYER, CT_Medic))
 		local max = math.floor(Player_GetCurrentPopulationCap(AGS_GS_LOCAL_PLAYER, CT_Medic))
 		--local totalMax = math.floor(Player_GetMaxPopulationCapOverride(AGS_GS_LOCAL_PLAYER, CT_Medic))
@@ -162,7 +162,8 @@ function AGS_SpecialPopulationUI_CreateUI()
 		VerticalAlignment="Bottom" 
 		SnapsToDevicePixels="True"
 		Margin="{Binding [info][used_margin]}"
-		Visibility="{Binding [is_ui_visible], Converter={StaticResource BoolToVis}}">
+		Visibility="{Binding [is_ui_visible], Converter={StaticResource BoolToVis}}"
+		IsHitTestVisible="False">
 		<Grid.Resources>
 			<ResourceDictionary.MergedDictionaries>
 				<ResourceDictionary Source="pack://application:,,,ui/Resources/HUDResources.xaml" />
@@ -171,8 +172,8 @@ function AGS_SpecialPopulationUI_CreateUI()
 	<Grid.RowDefinitions>
 	    <RowDefinition Height="Auto"/>
 	</Grid.RowDefinitions>
-	<!--  PopulationData  -->
-	<Canvas Grid.Row="0">
+	<!--  PopulationData Image Origin Width&Height 26,30  -->
+	<Canvas Grid.Row="0" Visibility="Collapsed">
         <Image Canvas.Right="0" Canvas.Bottom="0"
 			   Width="130"
                Stretch="UniformToFill"
@@ -191,14 +192,14 @@ function AGS_SpecialPopulationUI_CreateUI()
 			<ColumnDefinition Width="*"/>
 		</Grid.ColumnDefinitions>
         <Image Grid.Column="0"
-               Width="26" Height="30"
-               Margin="16,0,0,2" 
+               Width="24" Height="24"
+               Margin="18,0,0,3" 
 			   HorizontalAlignment="Left"
                VerticalAlignment="Center"
 			   Source="{Binding [ship_icon]}">
         </Image>
         <TextBlock Grid.Column="1"
-                   Margin="8,0,0,0" 
+                   Margin="9,0,0,0" 
 		   		   HorizontalAlignment="Left"
 				   VerticalAlignment="Center"
                    Style="{StaticResource nHUDBaseHeavyTextBlockStyle}">

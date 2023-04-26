@@ -1,9 +1,18 @@
 <instance version="4" description="" template="sbps">
 	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-249732250" List.ParentItemID="-249732250">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-1160966322" List.ParentItemID="-1160966322">
+					<group name="info">
+						<locstring name="screen_name" value="11203537" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-719102111" List.ParentItemID="-719102111">
 			<list name="unit_list">
 				<group name="loadout_data" List.ItemID="-2076261556" List.ParentItemID="-2076261556">
-					<instance_reference name="type" value="ebps\races\chinese\units\unit_naval_war_galley_3_chi" overrideParent="True" />
+					<instance_reference name="type" value="ebps\races\chinese\units\unit_naval_war_galley_3_chi" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 				</group>
 			</list>
 		</template_reference>

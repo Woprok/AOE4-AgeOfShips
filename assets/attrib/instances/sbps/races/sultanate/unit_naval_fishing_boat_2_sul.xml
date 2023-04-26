@@ -4,6 +4,7 @@
 			<list name="race_list">
 				<group name="race_data" List.ItemID="1203990614" List.ParentItemID="1203990614">
 					<group name="info">
+						<locstring name="help_text" value="11205253" overrideParent="True" />
 						<bool name="is_unique_to_race" value="True" overrideParent="True" />
 					</group>
 				</group>
@@ -12,7 +13,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="1654890866" List.ParentItemID="1654890866">
 			<list name="unit_list">
 				<group name="loadout_data" List.ItemID="1862695721" List.ParentItemID="1862695721">
-					<instance_reference name="type" value="ebps\races\sultanate\units\unit_naval_fishing_boat_2_sul" overrideParent="True" />
+					<instance_reference name="type" value="ebps\races\sultanate\units\unit_naval_fishing_boat_2_sul" mod="754eeb87b7624e0a8a9a710767df6171" overrideParent="True" />
 				</group>
 			</list>
 		</template_reference>

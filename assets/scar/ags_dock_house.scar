@@ -1,5 +1,5 @@
 
-AGS_DOCKHOUSE_POPULATION = 5
+AGS_DOCKHOUSE_POPULATION = 10
 AGS_DOCKHOUSE_MODULE = "AGS_DockHouse"
 
 function AGS_DockHouse_UpdateModuleSettings()	
