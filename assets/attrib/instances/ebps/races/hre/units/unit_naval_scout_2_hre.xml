@@ -1,0 +1,37 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="766643941" List.ParentItemID="766643941">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1211065010" List.ParentItemID="1211065010">
+					<group name="tier" List.ItemID="-807427674" List.ParentItemID="-807427674">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier2_naval_scout_ship_hre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1306013943" List.ParentItemID="1306013943">
+			<list name="type_list" overrideParent="True">
+				<group name="type" comment="Repair" List.ItemID="2085081433">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" overrideParent="True" List.ItemID="713682584">
+					<enum name="interaction_type" value="inspire_hre" />
+					<int name="prefer_number" value="1" />
+					<int name="max_number" value="1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="199145" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_scout_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

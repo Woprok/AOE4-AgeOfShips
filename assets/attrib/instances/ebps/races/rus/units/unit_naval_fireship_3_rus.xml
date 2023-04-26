@@ -1,0 +1,69 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-58523565" List.ParentItemID="-58523565">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_transport_ship" overrideParent="True" />
+			<float name="entity_scale" value="100" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1790907575" List.ParentItemID="-1790907575">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\modal_abilities\core\fireship_target" List.ItemID="1412143439" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1714072199" List.ParentItemID="-1714072199">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="53914070">
+					<string name="state_tree" value="unit_action_apply\units\naval_generic" />
+				</group>
+				<group name="container" List.ItemID="1081856477">
+					<string name="state_tree" value="upgrade_entity_naval\upgrade_naval_role_combatship_rus" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-1392012646">
+					<string name="state_tree" value="combat_ship_action_apply" />
+				</group>
+				<group name="container" List.ItemID="-2126279234">
+					<string name="state_tree" value="upgrade_entity_naval\upgrade_naval_role_incendiary_ship_rus" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-3214310" List.ParentItemID="-3214310">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="medium_ship" overrideParent="True" List.ItemID="-1318749604" />
+				<enum name="unit_type" value="naval_fireship" List.ItemID="759599444" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="-1566923677" />
+				<enum name="unit_type" value="non_aggressive" List.ItemID="1637432938" />
+				<enum name="unit_type" value="siegeable" List.ItemID="1167561180" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="846885725" />
+				<enum name="unit_type" value="military" List.ItemID="-2029099159" />
+				<enum name="unit_type" value="incendiary_ship" List.ItemID="-1212732847" />
+				<enum name="unit_type" value="lodya_ship" List.ItemID="-170779168" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-2091341243" List.ParentItemID="-2091341243">
+			<instance_reference name="navigation_agent_info" value="navigation\agent_info\naval\oar\naval_oar_medium_agent_info" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1332237399" List.ParentItemID="-1332237399">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-996648013" List.ParentItemID="-996648013">
+					<group name="tier" List.ItemID="-696193104" List.ParentItemID="-696193104">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier3_naval_fireship_rus" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1812169193" List.ListAction="Append">
+			<bool name="must_be_in_supply" value="False" />
+			<float name="number_of_standard_slots" value="-1" />
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fireship_to_combatship_rus" overrideParent="True" List.ItemID="-523986330" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fireship_to_fishingship_rus" overrideParent="True" List.ItemID="1849118205" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fireship_to_galley_rus" overrideParent="True" List.ItemID="-1335848158" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fireship_to_tradeship_rus" overrideParent="True" List.ItemID="-1122345107" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fireship_to_transportship_rus" overrideParent="True" List.ItemID="1853314456" />
+			</list>
+			<int name="max_queue_size_override" value="-1" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193097" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fireship_3" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

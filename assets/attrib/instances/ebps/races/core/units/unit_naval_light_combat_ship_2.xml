@@ -1,0 +1,83 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1032450737" List.ParentItemID="1032450737">
+			<float name="entity_scale" value="120" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-380493653" List.ParentItemID="-380493653">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="81232593" />
+				<enum name="unit_type" value="naval_war_galley" List.ItemID="2093466263" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="1658649010" />
+				<enum name="unit_type" value="ship" List.ItemID="-674061302" />
+				<enum name="unit_type" value="ranged" List.ItemID="1230482081" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-1433187267" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-2128384561" />
+				<enum name="unit_type" value="archer_ship" List.ItemID="1778725827" />
+				<enum name="unit_type" value="small_ship" List.ItemID="-1232006459" />
+			</list>
+			<list name="unit_type_list_selection_keybind_only" overrideParent="True">
+				<enum name="unit_type" value="included_by_naval_military_hotkeys" List.ItemID="-845698720" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1944405846" List.ParentItemID="1944405846">
+			<list name="hardpoints" overrideParent="True">
+				<group name="hardpoint" List.ItemID="1152505703">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table" overrideParent="True">
+						<group name="weapon" List.ItemID="-2137043278">
+							<group name="heading">
+								<float name="x" value="-1" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="0.75" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="fx_marker_muz_fishing" />
+										<string name="parent_rigidbody_target_name" value="" />
+										<enum name="game_object_attachment_type" value="scenegraph" />
+									</template_reference>
+									<instance_reference name="ebp" value="ebps\races\core\weapons\ranged\wpn_ranged_naval_arrow" />
+									<group name="attachment_flags">
+										<bool name="sim_only" value="False" />
+										<bool name="no_pathfinding" value="False" />
+										<bool name="not_snappable" value="False" />
+										<bool name="restore_snap_to_ground_on_detach" value="False" />
+										<bool name="no_sim_update" value="False" />
+										<bool name="join_parent_squad" value="False" />
+										<bool name="redirect_damage_to_parent_entity" value="True" />
+										<bool name="assign_as_attachment_combat_leader" value="False" />
+										<bool name="assign_as_attachment_movement_leader" value="False" />
+										<bool name="receive_parent_animations" value="False" />
+										<bool name="receive_parent_death" value="False" />
+									</group>
+								</template_reference>
+								<list name="possible_blueprint_updates">
+								</list>
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="">
+							</template_reference>
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="True" />
+					<string name="base_marker" value="fx_marker_muz_fishing" />
+					<list name="preferred_inventory_item_categories">
+					</list>
+					<list name="firing_offset_markers">
+					</list>
+					<bool name="initialize_weapons_on_creation" value="True" />
+					<string name="offhand_marker" value="" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2033778" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_war_galley_3" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

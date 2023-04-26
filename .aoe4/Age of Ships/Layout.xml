@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LayoutRoot>
+  <RootPanel Orientation="Vertical">
+    <LayoutPanel Orientation="Horizontal">
+      <LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="312" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
+        <LayoutAnchorablePane DockWidth="312" DockHeight="200" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="04/26/2023 16:52:38" />
+        </LayoutAnchorablePane>
+      </LayoutAnchorablePaneGroup>
+      <LayoutPanel Orientation="Vertical">
+        <LayoutDocumentPaneGroup Orientation="Horizontal">
+          <LayoutDocumentPane Id="23dee6d3-35d0-4ced-9b34-eeda7e5c7fee" DockWidth="0.848630175224373*">
+            <LayoutDocument Title="ebps" ContentId="Category|ebps" LastActivationTimeStamp="04/26/2023 16:56:05" />
+            <LayoutDocument Title="Age of Ships.scar" ContentId="FileName|Script|assets\scar\winconditions\Age of Ships.scar" ToolTip="E:\Mods\Age of Empires IV\Age of Ships\assets\scar\winconditions\Age of Ships.scar" LastActivationTimeStamp="04/26/2023 15:34:56" />
+            <LayoutDocument Title="Age of Ships.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x4EB529CB00F18CA3" LastActivationTimeStamp="04/26/2023 16:07:01" />
+            <LayoutDocument Title="army" ContentId="Category|army" LastActivationTimeStamp="04/26/2023 13:27:01" />
+            <LayoutDocument Title="ags_special_population_ui.scar" ContentId="FileName|Script|assets\scar\ags_special_population_ui.scar" ToolTip="E:\Mods\Age of Empires IV\Age of Ships\assets\scar\ags_special_population_ui.scar" LastActivationTimeStamp="04/26/2023 17:01:59" />
+            <LayoutDocument Title="ags_dock_house.scar" IsSelected="True" IsLastFocusedDocument="True" ContentId="FileName|Script|assets\scar\ags_dock_house.scar" ToolTip="E:\Mods\Age of Empires IV\Age of Ships\assets\scar\ags_dock_house.scar" LastActivationTimeStamp="04/26/2023 17:02:01" />
+            <LayoutDocument Title="Enums" ContentId="Attributes.Enums" LastActivationTimeStamp="04/26/2023 14:17:18" />
+            <LayoutDocument Title="ags_temporary.scar" ContentId="FileName|Script|assets\scar\ags_temporary.scar" ToolTip="E:\Mods\Age of Empires IV\Age of Ships\assets\scar\ags_temporary.scar" LastActivationTimeStamp="04/26/2023 15:33:03" />
+            <LayoutDocument Title="resource_type_info" ContentId="Category|resource_type_info" LastActivationTimeStamp="04/26/2023 15:59:00" />
+            <LayoutDocument Title="upgrade" ContentId="Category|upgrade" LastActivationTimeStamp="04/26/2023 16:45:42" />
+          </LayoutDocumentPane>
+          <LayoutDocumentPane DockWidth="1.11268855368234*">
+            <LayoutDocument Title="sbps" IsSelected="True" ContentId="Category|sbps" FloatingLeft="339" FloatingTop="382" FloatingWidth="2216" FloatingHeight="823" LastActivationTimeStamp="04/26/2023 16:56:10" PreviousContainerId="23dee6d3-35d0-4ced-9b34-eeda7e5c7fee" PreviousContainerIndex="7" />
+          </LayoutDocumentPane>
+        </LayoutDocumentPaneGroup>
+      </LayoutPanel>
+    </LayoutPanel>
+    <LayoutAnchorablePane Id="e44d34b5-b1e5-455b-8daf-f82552b55711" Name="anchorablesPane" DockHeight="285">
+      <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="'options\ebpextensions\resource_ext\resource_choice_ui_info_option' References" IsSelected="True" ContentId="FindReferencesResults1" LastActivationTimeStamp="04/26/2023 15:57:39" />
+    </LayoutAnchorablePane>
+    <LayoutAnchorablePane Id="c47e7669-679a-4ac3-999b-0557bcf54dbb" DockHeight="190">
+      <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" IsSelected="True" ContentId="Output" LastActivationTimeStamp="04/26/2023 16:21:41" />
+      <LayoutAnchorable AutoHideHeight="229" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Error List" ContentId="ErrorList" LastActivationTimeStamp="05/08/2022 20:33:07" />
+      <LayoutAnchorable AutoHideHeight="266" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Object Browser" ContentId="ScenarioEditor.ObjectBrowser" LastActivationTimeStamp="04/13/2022 13:49:45" />
+      <LayoutAnchorable AutoHideHeight="442" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Type Browser" ContentId="ScenarioEditor.ReflectTypeBrowser" LastActivationTimeStamp="04/13/2022 13:48:02" />
+    </LayoutAnchorablePane>
+  </RootPanel>
+  <TopSide />
+  <RightSide>
+    <LayoutAnchorGroup>
+      <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Playback" ContentId="EssenceEditor.Playback" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="100" LastActivationTimeStamp="11/27/2015 11:24:02" />
+    </LayoutAnchorGroup>
+    <LayoutAnchorGroup Id="2548db53-601d-4bc5-a122-1f7d04458881">
+      <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Properties" ContentId="EssenceEditor.Properties" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="04/08/2022 19:32:36" />
+    </LayoutAnchorGroup>
+  </RightSide>
+  <LeftSide />
+  <BottomSide />
+  <FloatingWindows>
+    <LayoutAnchorableFloatingWindow>
+      <LayoutAnchorablePaneGroup Orientation="Horizontal" DockHeight="401" FloatingWidth="1205" FloatingHeight="886" FloatingLeft="952" FloatingTop="135">
+        <LayoutAnchorablePane Id="8650acdb-d657-4216-85a9-24709482ba39" DockHeight="401" FloatingWidth="1205" FloatingHeight="886" FloatingLeft="952" FloatingTop="135" />
+      </LayoutAnchorablePaneGroup>
+    </LayoutAnchorableFloatingWindow>
+  </FloatingWindows>
+  <Hidden>
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Console" IsSelected="True" ContentId="Console" LastActivationTimeStamp="04/26/2023 12:41:44" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Blueprint List" IsSelected="True" ContentId="ScenarioEditor.AssetBlueprint" LastActivationTimeStamp="04/26/2023 12:41:44" PreviousContainerId="e44d34b5-b1e5-455b-8daf-f82552b55711" PreviousContainerIndex="1" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="04/26/2023 12:41:44" PreviousContainerId="2548db53-601d-4bc5-a122-1f7d04458881" PreviousContainerIndex="1" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="04/26/2023 12:41:44" PreviousContainerId="e44d34b5-b1e5-455b-8daf-f82552b55711" PreviousContainerIndex="0" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Find Results 1" IsSelected="True" ContentId="FindResults" FloatingLeft="952" FloatingTop="135" FloatingWidth="1205" FloatingHeight="886" LastActivationTimeStamp="04/26/2023 12:41:44" PreviousContainerId="8650acdb-d657-4216-85a9-24709482ba39" PreviousContainerIndex="0" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Globals" ContentId="Globals" LastActivationTimeStamp="04/26/2023 15:34:51" PreviousContainerId="e44d34b5-b1e5-455b-8daf-f82552b55711" PreviousContainerIndex="2" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Locals" ContentId="Locals" LastActivationTimeStamp="04/26/2023 15:34:51" PreviousContainerId="e44d34b5-b1e5-455b-8daf-f82552b55711" PreviousContainerIndex="2" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Call Stack" ContentId="CallStack" LastActivationTimeStamp="04/26/2023 15:34:51" PreviousContainerId="e44d34b5-b1e5-455b-8daf-f82552b55711" PreviousContainerIndex="0" />
+  </Hidden>
+</LayoutRoot>

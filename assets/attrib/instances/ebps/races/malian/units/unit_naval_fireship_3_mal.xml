@@ -1,0 +1,29 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-58523565" List.ParentItemID="-58523565">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_transport_ship" overrideParent="True" />
+			<float name="entity_scale" value="70" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1790907575" List.ParentItemID="-1790907575">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\modal_abilities\core\fireship_target" overrideParent="True" List.ItemID="708493500" List.ParentItemID="708493500" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-3214310" List.ParentItemID="-3214310">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\malian" overrideParent="True" List.ItemID="1615941072" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1332237399" List.ParentItemID="-1332237399">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-996648013" List.ParentItemID="-996648013">
+					<group name="tier" List.ItemID="-696193104" List.ParentItemID="-696193104">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\malian\units\tier3_naval_fireship_mal" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2331085" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fireship_3" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

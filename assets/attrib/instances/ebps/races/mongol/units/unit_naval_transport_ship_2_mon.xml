@@ -1,0 +1,26 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1416640969" List.ParentItemID="-1416640969">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_medium_junk" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1985767927" List.ParentItemID="1985767927">
+			<float name="hitpoints" value="600" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="2021421105" List.ParentItemID="2021421105">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="6.9" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1850946772" List.ParentItemID="1850946772">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1549139462" List.ParentItemID="-1549139462">
+					<group name="tier" List.ItemID="2143932993" List.ParentItemID="2143932993">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier2_naval_transport_ship_mon" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193103" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_transport_ship_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

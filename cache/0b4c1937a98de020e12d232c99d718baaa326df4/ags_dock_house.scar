@@ -1,0 +1,81 @@
+
+AGS_DOCKHOUSE_POPULATION = 5
+AGS_DOCKHOUSE_MODULE = "AGS_DockHouse"
+
+function AGS_DockHouse_UpdateModuleSettings()	
+	AGS_Print("AGS_DockHouse_UpdateModuleSettings")
+	if not AGS_GLOBAL_SETTINGS.DockHouse then
+		Core_UnregisterModule(AGS_DOCKHOUSE_MODULE)
+	end
+end
+
+function AGS_DockHouse_OnPlay()
+	AGS_Print("AGS_DockHouse_OnPlay")
+	Rule_AddGlobalEvent(AGS_DockHouse_OnConstructionComplete, GE_ConstructionComplete)
+	Rule_AddGlobalEvent(AGS_DockHouse_OnEntityKilled, GE_EntityKilled)
+end
+
+function AGS_DockHouse_GameOver()
+	AGS_Print("AGS_DockHouse_GameOver")
+	Rule_RemoveGlobalEvent(AGS_DockHouse_OnConstructionComplete)
+	Rule_RemoveGlobalEvent(AGS_DockHouse_OnEntityKilled)
+end
+
+function AGS_DockHouse_OnConstructionComplete()
+		AGS_Print("AGS_DockHouse_OnConstructionComplete", context)
+	if context == nil or context.player == nil or context.entity == nil then 
+		return
+	end	
+	local new_context = {
+		player = Core_GetPlayersTableEntry(context.player),
+		entity_id = context.entity,
+		entity_uwid = Entity_GetID(context.entity),
+		--entity_position = Entity_GetPosition(context.entity),
+	}	
+	-- Eliminated players are not interesting for any conditions.
+	if new_context.player == nil or new_context.player.isEliminated then
+		return
+	end
+	
+	if AGS_IsDock(new_context.entity_id) then
+		AGS_Print("AGS_DockHouse_OnConstructionCompleted")
+		AGS_DockHouse_AddMinPopulation(new_context.player, AGS_DOCKHOUSE_POPULATION)
+	end
+end
+
+function AGS_DockHouse_OnEntityKilled()
+		AGS_Print("AGS_DockHouse_OnEntityKilled", context)
+	if context == nil or context.victim == nil or context.victimOwner == nil then 
+		return
+	end	
+	local new_context = {
+		player = Core_GetPlayersTableEntry(context.victimOwner),
+		entity_id = context.victim,
+		entity_uwid = Entity_GetID(context.victim),
+		--entity_position = Entity_GetPosition(context.victim),
+	}	
+	-- Eliminated players are not interesting for any conditions.
+	if new_context.player == nil or new_context.player.isEliminated then
+		return
+	end
+	
+	if AGS_IsDock(new_context.entity_id) then
+		AGS_Print("AGS_DockHouse_OnEntityKill")
+		AGS_DockHouse_RemoveMinPopulation(new_context.player, AGS_DOCKHOUSE_POPULATION)
+	end
+end
+
+-- Apply function.
+function AGS_DockHouse_AddMaxCapPopulation(player, value)
+	Modifier_ApplyToPlayer(Modifier_Create(MAT_Player, "max_medic_cap_player_modifier", MUT_Addition, false, value, ""), player.id, 0)
+end
+function AGS_DockHouse_AddMinPopulation(player, value)
+	Modifier_ApplyToPlayer(Modifier_Create(MAT_Player, "medic_cap_player_modifier", MUT_Addition, false, value, ""), player.id, 0)
+end
+-- Apply function.
+function AGS_DockHouse_RemoveMaxCapPopulation(player, value)
+	Modifier_ApplyToPlayer(Modifier_Create(MAT_Player, "max_medic_cap_player_modifier", MUT_Addition, false, -value, ""), player.id, 0)
+end
+function AGS_DockHouse_RemoveMinPopulation(player, value)
+	Modifier_ApplyToPlayer(Modifier_Create(MAT_Player, "medic_cap_player_modifier", MUT_Addition, false, -value, ""), player.id, 0)
+end

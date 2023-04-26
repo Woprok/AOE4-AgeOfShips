@@ -1,0 +1,41 @@
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-621024406" List.ParentItemID="-621024406">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="753488983" List.ParentItemID="753488983">
+					<instance_reference name="type" value="ebps\races\abbasid\units\unit_naval_combat_warship_4_abb" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-629696730" List.ParentItemID="-629696730">
+			<list name="requirement_table" comment="Requires castle age&#xD;&#xA;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1436851578" List.ParentItemID="1436851578">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\abbasid" List.ItemID="397742811" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="1812222336" List.ParentItemID="1812222336">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext" List.ItemID="1033850395" List.ListAction="Append">
+			<float name="number_of_slots" value="-1" />
+			<list name="upgrades">
+			</list>
+			<int name="max_queue_size_override" value="-1" />
+			<list name="tech_trees">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext" List.ItemID="-2118111087" List.ListAction="Append">
+			<list name="action_state_trees">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_targeting_system_ext" List.ItemID="-794677140" List.ListAction="Append">
+			<bool name="allow_squad_scan_close_enemies" value="True" />
+			<int name="history_size" value="2" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="199726" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_combat_warship_4" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

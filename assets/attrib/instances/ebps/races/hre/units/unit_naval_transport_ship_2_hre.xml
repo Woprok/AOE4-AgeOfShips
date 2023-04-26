@@ -1,0 +1,46 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1850946772" List.ParentItemID="1850946772">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1549139462" List.ParentItemID="-1549139462">
+					<group name="tier" List.ItemID="2143932993" List.ParentItemID="2143932993">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier2_naval_transport_ship_hre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-696634294" List.ParentItemID="-696634294">
+			<list name="type_list" overrideParent="True">
+				<group name="type" comment="Repair" List.ItemID="-1956501436">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="1476246969">
+					<enum name="interaction_type" value="seek_shelter_destination" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" overrideParent="True" List.ItemID="-813779064">
+					<enum name="interaction_type" value="inspire_hre" />
+					<int name="prefer_number" value="1" />
+					<int name="max_number" value="1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193093" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_transport_ship_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

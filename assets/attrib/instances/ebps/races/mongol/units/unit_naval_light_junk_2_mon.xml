@@ -1,0 +1,40 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-380493653" List.ParentItemID="-380493653">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\mongol" List.ItemID="-601252848" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1176337650" List.ParentItemID="1176337650">
+			<string name="debug_text" value="Light Junk" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1944405846" List.ParentItemID="1944405846">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1152505703" List.ParentItemID="1152505703">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-2137043278" List.ParentItemID="-2137043278">
+							<group name="heading">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="z" value="1" overrideParent="True" />
+							</group>
+						</group>
+					</list>
+				</group>
+			</list>
+			<template_reference name="kill_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="naval_piracy_mon\kill_action" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-992059189" List.ParentItemID="-992059189">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1569323579" List.ParentItemID="-1569323579">
+					<group name="tier" List.ItemID="545864735" List.ParentItemID="545864735">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier2_naval_scout_ship_mon" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2033750" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_light_combat_ship_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

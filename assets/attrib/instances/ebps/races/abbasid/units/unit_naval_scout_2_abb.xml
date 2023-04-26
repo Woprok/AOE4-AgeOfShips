@@ -1,0 +1,20 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="806640463" List.ParentItemID="806640463">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="-2109300642" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="766643941" List.ParentItemID="766643941">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1211065010" List.ParentItemID="1211065010">
+					<group name="tier" List.ItemID="-807427674" List.ParentItemID="-807427674">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier2_naval_scout_ship_abb" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="926537" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_scout_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

@@ -1,0 +1,39 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1795906545" List.ParentItemID="1795906545">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\modal_abilities\core\trade_set_home_market" List.ItemID="220633086" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\french\toggle_trade_resource_food_fre" overrideParent="True" List.ItemID="-17126099" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\french\toggle_trade_resource_wood_fre" overrideParent="True" List.ItemID="-471539349" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\french\trade_resource_modifiers_fre" List.ItemID="1989729093" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="496423716" List.ParentItemID="496423716">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="1343635342">
+					<string name="state_tree" value="unit_action_apply\units\naval_generic" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="1039871681">
+					<string name="state_tree" value="naval_trader_modifiers" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="1862127987">
+					<string name="state_tree" value="combat_ship_action_apply" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1301680932" List.ParentItemID="-1301680932">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="28810469" List.ParentItemID="28810469">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1123151313" List.ParentItemID="-1123151313">
+					<group name="tier" List.ItemID="-1625244514" List.ParentItemID="-1625244514">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\units\tier3_naval_trade_ship_fre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="196675" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

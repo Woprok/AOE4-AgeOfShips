@@ -1,0 +1,21 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2048772893" List.ParentItemID="-2048772893">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_medium_junk" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1301680932" List.ParentItemID="-1301680932">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="28810469" List.ParentItemID="28810469">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1123151313" List.ParentItemID="-1123151313">
+					<group name="tier" List.ItemID="-1625244514" List.ParentItemID="-1625244514">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier2_naval_trade_ship_chi" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="196666" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_trade_ship_3" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

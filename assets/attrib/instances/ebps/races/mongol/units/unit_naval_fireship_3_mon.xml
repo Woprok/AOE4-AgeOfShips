@@ -1,0 +1,25 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1790907575" List.ParentItemID="-1790907575">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\modal_abilities\core\fireship_target" List.ItemID="-82015058" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1332237399" List.ParentItemID="-1332237399">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-996648013" List.ParentItemID="-996648013">
+					<group name="tier" List.ItemID="-696193104" List.ParentItemID="-696193104">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\units\tier3_naval_fireship_mon" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1879425950" List.ParentItemID="-1879425950">
+			<template_reference name="kill_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="naval_piracy_mon\kill_action" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193102" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fireship_3" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

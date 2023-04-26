@@ -1,0 +1,31 @@
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="819195446" List.ParentItemID="819195446">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="1445599724" List.ParentItemID="1445599724">
+					<instance_reference name="type" value="ebps\races\english\units\unit_naval_trade_ship_3_eng" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-1826141659" List.ParentItemID="-1826141659">
+			<list name="requirement_table" comment="Requires castle age&#xD;&#xA;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1022017315" List.ParentItemID="1022017315">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\english" List.ItemID="-1138099621" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="-523053315" List.ParentItemID="-523053315">
+			<list name="age_mapping">
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="-1026521111" List.ParentItemID="-1026521111" />
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="-741341976" List.ParentItemID="-741341976" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-1027009711" List.ParentItemID="-1027009711">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="196681" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_trade_ship_3" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

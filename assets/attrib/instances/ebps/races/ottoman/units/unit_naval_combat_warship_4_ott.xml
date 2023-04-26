@@ -1,0 +1,44 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-986245830" List.ParentItemID="-986245830">
+			<group name="sight_package">
+				<float name="inner_radius" value="28" overrideParent="True" />
+				<float name="outer_radius" value="52" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1024331366" List.ParentItemID="-1024331366">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="2015719055" />
+				<enum name="unit_type" value="ship" List.ItemID="-570855087" />
+				<enum name="unit_type" value="naval_broadside" List.ItemID="92850999" />
+				<enum name="unit_type" value="naval_warship" List.ItemID="2118049468" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="-944338019" />
+				<enum name="unit_type" value="ranged" List.ItemID="-990447797" />
+				<enum name="unit_type" value="siegeable" List.ItemID="114486233" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="1606965432" />
+				<enum name="unit_type" value="gunpowder" List.ItemID="814654522" />
+				<enum name="unit_type" value="naval_western" List.ItemID="233757634" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1378224486" List.ParentItemID="-1378224486">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="AI Left 1" List.ItemID="-326418790" List.ParentItemID="-326418790">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1089891659" List.ParentItemID="1089891659">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\ottoman\warship_ott" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1079115826" List.ParentItemID="-1079115826">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1576515024" List.ParentItemID="-1576515024">
+					<group name="tier" List.ItemID="516963131" List.ParentItemID="516963131">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\units\tier4_naval_combat_warship_ott" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2034645" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

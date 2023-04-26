@@ -1,0 +1,37 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1032450737" List.ParentItemID="1032450737">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_fishing_boat" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-380493653" List.ParentItemID="-380493653">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="829467316" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1944405846" List.ParentItemID="1944405846">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1152505703" List.ParentItemID="1152505703">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-2137043278" List.ParentItemID="-2137043278">
+							<group name="heading">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="z" value="1" overrideParent="True" />
+							</group>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-992059189" List.ParentItemID="-992059189">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1569323579" List.ParentItemID="-1569323579">
+					<group name="tier" List.ItemID="545864735" List.ParentItemID="545864735">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier2_naval_scout_ship_sul" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2033848" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_light_combat_ship_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

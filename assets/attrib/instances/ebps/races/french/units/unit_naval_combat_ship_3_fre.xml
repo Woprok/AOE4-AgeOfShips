@@ -1,0 +1,49 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="606513945" List.ParentItemID="606513945">
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Ranged" value="4" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-403925322" List.ParentItemID="-403925322">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="Left Primary" List.ItemID="1330053530" List.ParentItemID="1330053530">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1028982956" List.ParentItemID="-1028982956">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\french\weapons\wpn_range_naval_springald_left_fre" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" comment="Right Primary" List.ItemID="-1773557488" List.ParentItemID="-1773557488">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="1576839631" List.ParentItemID="1576839631">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\french\weapons\wpn_range_naval_springald_right_fre" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="1291592750" List.ParentItemID="1291592750">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-193675" List.ParentItemID="-193675">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1183873375" List.ParentItemID="1183873375">
+					<group name="tier" List.ItemID="252790011" List.ParentItemID="252790011">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\units\tier3_naval_combat_ship_fre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193083" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

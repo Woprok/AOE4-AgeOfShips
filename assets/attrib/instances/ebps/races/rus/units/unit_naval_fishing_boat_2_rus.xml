@@ -1,0 +1,134 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1509545677" List.ParentItemID="1509545677">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_transport_ship" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-269846760" List.ParentItemID="-269846760">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-1193864555">
+					<string name="state_tree" value="unit_action_apply\units\naval_generic" />
+				</group>
+				<group name="container" List.ItemID="-886293047">
+					<string name="state_tree" value="combat_ship_action_apply" />
+				</group>
+				<group name="container" List.ItemID="1002175527">
+					<string name="state_tree" value="upgrade_entity_naval\upgrade_naval_role_fishing_ship_rus" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1023457613" List.ParentItemID="-1023457613">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="150" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="38" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1593639724" List.ParentItemID="1593639724">
+			<float name="hitpoints" value="250" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1067766021" List.ParentItemID="1067766021">
+			<float name="medic_pop" value="2" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1593386683" List.ParentItemID="1593386683">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="naval_fishing_ship" List.ItemID="-192238533" />
+				<enum name="unit_type" value="medium_ship" overrideParent="True" List.ItemID="-808892257" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="-1482469104" />
+				<enum name="unit_type" value="worker" List.ItemID="1325893228" />
+				<enum name="unit_type" value="non_aggressive" List.ItemID="1978429928" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-1131206065" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="1486206404" />
+				<enum name="unit_type" value="lodya_ship" List.ItemID="2093817117" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1076482183" List.ParentItemID="1076482183">
+			<list name="custom_selection_obbs" overrideParent="True">
+				<string name="named_obb" value="selection_0" List.ItemID="769789620" />
+				<string name="named_obb" value="selection_1" List.ItemID="-1646633447" />
+				<string name="named_obb" value="selection_2" List.ItemID="-327996121" />
+				<string name="named_obb" value="selection_3" List.ItemID="-1521078753" />
+				<string name="named_obb" value="selection_4" List.ItemID="1098063897" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="1343277599" List.ParentItemID="1343277599">
+			<instance_reference name="navigation_agent_info" value="navigation\agent_info\naval\oar\naval_oar_medium_agent_info" overrideParent="True" />
+			<enum name="snap_to_surface_type" value="Water" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1437483138" List.ParentItemID="-1437483138">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fishingship_to_combatship_rus" List.ItemID="828588984" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fishingship_to_fireship_rus" List.ItemID="-1695199188" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fishingship_to_tradeship_rus" List.ItemID="-2109882006" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fishingship_to_transport_rus" List.ItemID="1712725253" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\naval\upgrade_naval_role_lodya_fishingship_to_galley_rus" overrideParent="True" List.ItemID="-630242246" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="1464115939" List.ParentItemID="1464115939">
+			<list name="gather_types">
+				<group name="gather_target" List.ItemID="2020888487" List.ParentItemID="2020888487">
+					<float name="gather_rate" value="1.71" overrideParent="True" />
+				</group>
+				<group name="gather_target" List.ItemID="1572754156" List.ParentItemID="1572754156">
+					<float name="gather_rate" value="1.26" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="812740552" List.ParentItemID="812740552">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-2062028827" List.ParentItemID="-2062028827">
+					<group name="tier" List.ItemID="-1664539092" List.ParentItemID="-1664539092">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier2_naval_fishing_boat_rus" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-642511212" List.ParentItemID="-642511212">
+			<list name="type_list" overrideParent="True">
+				<group name="type" comment="Drop Off" List.ItemID="2067998637">
+					<enum name="interaction_type" value="resource_drop_off" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" comment="Repair" List.ItemID="1606627094">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="979443508" List.ListAction="Append">
+			<enum_table name="accepted_resources">
+				<bool name="action" value="False" />
+				<bool name="command" value="False" />
+				<bool name="popcap" value="False" />
+				<bool name="food" value="True" />
+				<bool name="wood" value="False" />
+				<bool name="stone" value="False" />
+				<bool name="gold" value="False" />
+				<bool name="militia_hre" value="False" />
+			</enum_table>
+			<enum_table name="drop_off_time_seconds">
+				<float name="action" value="1" />
+				<float name="command" value="1" />
+				<float name="popcap" value="1" />
+				<float name="food" value="0" />
+				<float name="wood" value="1" />
+				<float name="stone" value="1" />
+				<float name="gold" value="1" />
+				<float name="militia_hre" value="1" />
+			</enum_table>
+			<bool name="allow_any_resource_after_construct" value="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193096" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fishing_boat_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

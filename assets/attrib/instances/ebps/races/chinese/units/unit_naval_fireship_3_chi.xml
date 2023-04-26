@@ -1,0 +1,18 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="1101161410" List.ParentItemID="1101161410">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1332237399" List.ParentItemID="-1332237399">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-996648013" List.ParentItemID="-996648013">
+					<group name="tier" List.ItemID="-696193104" List.ParentItemID="-696193104">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier3_naval_fireship_chi" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193076" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fireship_3" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

@@ -1,0 +1,28 @@
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-522043382" List.ParentItemID="-522043382">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="856969857" List.ParentItemID="856969857">
+					<instance_reference name="type" value="ebps\races\ottoman\units\unit_naval_dhow_2_ott" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1578999719" List.ParentItemID="1578999719">
+			<list name="requirement_table" comment="&#xD;&#xA;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="349221235" List.ParentItemID="349221235">
+			<list name="squad_type_list" removedIds="-741243774">
+				<enum name="squad_type" value="naval_war_galley" overrideParent="True" List.ItemID="2135442823" List.ListAction="Append" />
+			</list>
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\ottoman" overrideParent="True" List.ItemID="-532512786" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="1710175884" List.ParentItemID="1710175884">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101917" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_light_combat_ship_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

@@ -1,0 +1,22 @@
+﻿ID,Pipeline,PipelineStage,Notes,TranslationNotes,Tags,Text
+1,,,Mod name.,,,Age of Ships
+2,,,Mod description.,,,Adds new unique population type that is used by ships. Requires both gamemode and tuning pack to work properly.
+3,,,,,,Age of Ships
+4,,,,,,Enables ships to use new population type. Everything else is same as standard game.
+5,,,extra_text,,,Description
+6,,,formatter,,,Ship cost +%1%
+7,,,formatter,,,Ship cost +%1%
+8,,,extra_text,,,"Military & Economy Building, Trade Site, 5 Supply"
+9,,,extra_text,,,"Worker, Ship, 1 Supply"
+10,,,extra_text,,,"Springald Ship, 3 Supply"
+11,,,extra_text,,,"Warship, 5 Supply"
+12,,,extra_text,,,"Springald Ship, 3 Supply"
+13,,,extra_text,,,"Warship, 5 Supply"
+14,,,extra_text,,,"Incendiary Ship, 2 Supply"
+15,,,extra_text,,,"Archer Ship, 3 Supply"
+16,,,extra_text,,,"Ship, 2 Supply"
+17,,,extra_text,,,"Worker, Ship, 2 Supply"
+18,,,extra_text,,,"Ship, 2 Supply"
+19,,,extra_text,,,"Archer Ship, 3 Supply"
+20,,,extra_text,,,"Ship, 5 Supply"
+21,,,extra_text,,,"Ship, 5 Supply"

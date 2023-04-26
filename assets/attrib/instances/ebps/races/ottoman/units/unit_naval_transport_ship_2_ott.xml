@@ -1,0 +1,35 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="2021421105" List.ParentItemID="2021421105">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="6.6" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1122218456" List.ParentItemID="1122218456">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\ottoman\transport_ship_ott" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1850946772" List.ParentItemID="1850946772">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1549139462" List.ParentItemID="-1549139462">
+					<group name="tier" List.ItemID="2143932993" List.ParentItemID="2143932993">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\units\tier2_naval_transport_ship_ott" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="263582762" List.ParentItemID="263582762">
+			<list name="acceptable_types" overrideParent="True">
+				<enum name="acceptable_type" value="hold_infantry" List.ItemID="1827801254" />
+				<enum name="acceptable_type" value="hold_villager" List.ItemID="-578026771" />
+				<enum name="acceptable_type" value="hold_infantry_ranged" List.ItemID="1988564001" />
+				<enum name="acceptable_type" value="hold_siege" List.ItemID="2025166388" />
+				<enum name="acceptable_type" value="hold_monk" List.ItemID="1555282326" />
+				<enum name="acceptable_type" value="hold_khan" List.ItemID="-1124995725" />
+				<enum name="acceptable_type" value="hold_cavalry" List.ItemID="-548009521" />
+				<enum name="acceptable_type" value="hold_trader" List.ItemID="-1612194682" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2034650" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_transport_ship_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

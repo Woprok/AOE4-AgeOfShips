@@ -1,0 +1,41 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1593386683" List.ParentItemID="1593386683">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="naval_fishing_ship" List.ItemID="697239926" />
+				<enum name="unit_type" value="small_ship" List.ItemID="773645504" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="-1245951329" />
+				<enum name="unit_type" value="worker" List.ItemID="-382954599" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-1191124291" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="263034238" />
+				<enum name="unit_type" value="military" List.ItemID="-1917152600" />
+				<enum name="unit_type" value="ranged" List.ItemID="-875851141" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="1343277599" List.ParentItemID="1343277599">
+			<enum name="snap_to_surface_type" value="Water" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="1464115939" List.ParentItemID="1464115939">
+			<list name="gather_types">
+				<group name="gather_target" comment="BERRY BUSH" List.ItemID="2020888487" List.ParentItemID="2020888487">
+				</group>
+				<group name="gather_target" comment="DEEP WATER FISH" List.ItemID="1572754156" List.ParentItemID="1572754156">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-2139227297" List.ParentItemID="-2139227297">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\ottoman\fishing_boat_ott" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="812740552" List.ParentItemID="812740552">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-2062028827" List.ParentItemID="-2062028827">
+					<group name="tier" List.ItemID="-1664539092" List.ParentItemID="-1664539092">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\units\tier2_naval_fishing_boat_ott" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2034647" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fishing_boat_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

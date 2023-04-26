@@ -1,0 +1,23 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1416640969" List.ParentItemID="-1416640969">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_medium_lateen" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1292134611" List.ParentItemID="1292134611">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="-1687375732" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1850946772" List.ParentItemID="1850946772">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1549139462" List.ParentItemID="-1549139462">
+					<group name="tier" List.ItemID="2143932993" List.ParentItemID="2143932993">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier2_naval_transport_ship_abb" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="199680" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_transport_ship_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

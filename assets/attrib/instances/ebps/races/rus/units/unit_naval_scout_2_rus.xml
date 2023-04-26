@@ -1,0 +1,40 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1487789588" List.ParentItemID="1487789588">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_transport_ship" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="2106785799" List.ParentItemID="2106785799">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="100" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1254272722" List.ParentItemID="1254272722">
+			<float name="hitpoints" value="300" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="806640463" List.ParentItemID="806640463">
+			<list name="unit_type_list" removedIds="1497678854">
+				<enum name="unit_type" value="medium_ship" overrideParent="True" List.ItemID="-2103549681" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="911732214" List.ParentItemID="911732214">
+			<instance_reference name="navigation_agent_info" value="navigation\agent_info\naval\oar\naval_oar_medium_agent_info" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-714305720" List.ParentItemID="-714305720">
+			<list name="standard_upgrades" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="766643941" List.ParentItemID="766643941">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1211065010" List.ParentItemID="1211065010">
+					<group name="tier" List.ItemID="-807427674" List.ParentItemID="-807427674">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier2_naval_scout_ship_rus" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="199147" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_scout_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

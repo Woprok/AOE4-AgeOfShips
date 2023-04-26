@@ -1,0 +1,72 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1370903998" List.ParentItemID="-1370903998">
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Ranged" value="5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-986245830" List.ParentItemID="-986245830">
+			<group name="sight_package">
+				<float name="inner_radius" value="24" overrideParent="True" />
+				<float name="outer_radius" value="48" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1024331366" List.ParentItemID="-1024331366">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="1865172582" />
+				<enum name="unit_type" value="ship" List.ItemID="-187403637" />
+				<enum name="unit_type" value="naval_broadside" List.ItemID="-1910053556" />
+				<enum name="unit_type" value="naval_warship" List.ItemID="-434607541" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="-175233768" />
+				<enum name="unit_type" value="ranged" List.ItemID="1249195894" />
+				<enum name="unit_type" value="siegeable" List.ItemID="1469927398" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-1033680957" />
+				<enum name="unit_type" value="gunpowder" List.ItemID="1653356152" />
+				<enum name="unit_type" value="naval_western" List.ItemID="1609110325" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1378224486" List.ParentItemID="-1378224486">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="AI Left 1" List.ItemID="-326418790" List.ParentItemID="-326418790">
+				</group>
+				<group name="hardpoint" comment="Right 1" List.ItemID="-740019572" List.ParentItemID="-740019572">
+				</group>
+				<group name="hardpoint" comment="AI Right 3" List.ItemID="-827489862" List.ParentItemID="-827489862">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1079115826" List.ParentItemID="-1079115826">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1576515024" List.ParentItemID="-1576515024">
+					<group name="tier" List.ItemID="516963131" List.ParentItemID="516963131">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier4_naval_combat_warship_hre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1721688248" List.ParentItemID="1721688248">
+			<list name="type_list" overrideParent="True">
+				<group name="type" comment="Repair" List.ItemID="-1479204350">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" overrideParent="True" List.ItemID="-881739314">
+					<enum name="interaction_type" value="inspire_hre" />
+					<int name="prefer_number" value="1" />
+					<int name="max_number" value="1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193090" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

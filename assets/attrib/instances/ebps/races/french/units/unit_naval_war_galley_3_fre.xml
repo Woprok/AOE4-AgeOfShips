@@ -1,0 +1,15 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-992059189" List.ParentItemID="-992059189">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1569323579" List.ParentItemID="-1569323579">
+					<group name="tier" List.ItemID="545864735" List.ParentItemID="545864735">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\units\tier2_naval_war_galley_fre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101342" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_war_galley_3" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>

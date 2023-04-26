@@ -1,0 +1,19 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1919285238">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_population" List.ItemID="1671505647">
+					<enum name="reason" value="usage_and_display" />
+					<group name="free_pop">
+						<float name="medic" value="1000" />
+						<float name="personnel" value="1000" />
+						<float name="vehicle" value="1000" />
+					</group>
+				</template_reference>
+			</list>
+			<state_tree_node name="requirement_statetree" value="" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741843" />
+	<instance_reference name="parent_pbg" value="" />
+</instance>

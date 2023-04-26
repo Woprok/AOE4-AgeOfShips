@@ -1,0 +1,29 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="1343277599" List.ParentItemID="1343277599">
+			<enum name="snap_to_surface_type" value="Water" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-1258800165" List.ParentItemID="-1258800165">
+			<bool name="allow_entity_scan_close_enemies" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="1464115939" List.ParentItemID="1464115939">
+			<list name="gather_types">
+				<group name="gather_target" comment="BERRY BUSH" List.ItemID="2020888487" List.ParentItemID="2020888487">
+				</group>
+				<group name="gather_target" comment="DEEP WATER FISH" List.ItemID="1572754156" List.ParentItemID="1572754156">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="812740552" List.ParentItemID="812740552">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-2062028827" List.ParentItemID="-2062028827">
+					<group name="tier" List.ItemID="-1664539092" List.ParentItemID="-1664539092">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier2_naval_fishing_boat_eng" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="193080" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_fishing_boat_2" mod="754eeb87b7624e0a8a9a710767df6171" />
+</instance>
